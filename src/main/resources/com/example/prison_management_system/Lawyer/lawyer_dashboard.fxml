@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane prefHeight="620.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.prison_management_system.Lawyer.LawyerDashboard">
+   <children>
+      <Label layoutX="323.0" layoutY="25.0" prefHeight="35.0" prefWidth="197.0" text="Lawyer Dashbord">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <Button layoutX="32.0" layoutY="252.0" mnemonicParsing="false" text="View prisoner" />
+      <Button layoutX="259.0" layoutY="252.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="86.0" text="Cash File" />
+      <Button layoutX="485.0" layoutY="252.0" mnemonicParsing="false" text="Request Legal Visit" />
+      <Button layoutX="40.0" layoutY="454.0" mnemonicParsing="false" text="Bail/Parole" />
+      <Button layoutX="40.0" layoutY="570.0" mnemonicParsing="false" text="Back" />
+      <ImageView fitHeight="59.0" fitWidth="72.0" layoutX="266.0" layoutY="183.0">
+         <image>
+            <Image url="@../../../../../../../../../Users/Asus/Downloads/21-removebg-preview.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="68.0" fitWidth="86.0" layoutX="33.0" layoutY="178.0">
+         <image>
+            <Image url="@../../../../../../../../../Users/Asus/Downloads/Screenshot_2025-08-02_192559-removebg-preview.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="68.0" fitWidth="96.0" layoutX="495.0" layoutY="174.0">
+         <image>
+            <Image url="@../../../../../../../../../Users/Asus/Downloads/Screenshot_2025-08-02_195155-removebg-preview.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="76.0" fitWidth="86.0" layoutX="33.0" layoutY="367.0">
+         <image>
+            <Image url="@../../../../../../../../../Users/Asus/Downloads/Screenshot_2025-08-02_203607-removebg-preview.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="59.0" fitWidth="86.0" layoutX="252.0" layoutY="384.0">
+         <image>
+            <Image url="@../../../../../../../../../Users/Asus/Downloads/22-removebg-preview.png" />
+         </image>
+      </ImageView>
+      <Button layoutX="246.0" layoutY="454.0" mnemonicParsing="false" text="Court Schedule" />
+      <ImageView fitHeight="59.0" fitWidth="72.0" layoutX="498.0" layoutY="384.0">
+         <image>
+            <Image url="@../../../../../../../../../Users/Asus/Downloads/22-removebg-preview%20(1).png" />
+         </image>
+      </ImageView>
+      <Button layoutX="495.0" layoutY="454.0" mnemonicParsing="false" text="Add Lawyer" />
+      <Button layoutX="674.0" layoutY="454.0" mnemonicParsing="false" text="Track Status" />
+      <ImageView fitHeight="59.0" fitWidth="72.0" layoutX="678.0" layoutY="384.0">
+         <image>
+            <Image url="@../../../../../../../../../Users/Asus/Downloads/26-removebg-preview.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="59.0" fitWidth="78.0" layoutX="687.0" layoutY="183.0">
+         <image>
+            <Image url="@../../../../../../../../../Users/Asus/Downloads/26-removebg-preview%20(1).png" />
+         </image>
+      </ImageView>
+      <Button layoutX="688.0" layoutY="253.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="89.0" text="Monitor Case" />
+   </children>
+</AnchorPane>
