@@ -6,7 +6,7 @@
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-<AnchorPane prefHeight="600.0" prefWidth="808.0" xmlns="http://javafx.com/javafx/24.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.prison.visitor.VisitorNotification">
+<AnchorPane prefHeight="600.0" prefWidth="808.0" xmlns="http://javafx.com/javafx/24.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.prison.visitor.VisitRecord">
    <children>
       <Text layoutX="21.0" layoutY="38.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Prison Management" wrappingWidth="226.21630859375">
          <font>
@@ -20,10 +20,11 @@
       </Text>
       <Line endX="700.0" layoutX="108.0" layoutY="60.0" startX="-108.0" />
       <Line endX="-12.0" endY="467.0" layoutX="198.0" layoutY="133.0" startX="-12.0" startY="-133.0" />
-      <Button layoutY="61.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="185.0" text="Profile" />
-      <Button layoutY="87.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="185.0" text="Visit" />
-      <Button layoutY="113.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="185.0" text="History" />
-      <Button layoutY="139.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="185.0" text="Status" />
-      <Button layoutY="165.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="185.0" text="Notification" />
+      <Button layoutY="61.0" mnemonicParsing="false" onAction="#SwitchToVisitorDashboard" prefHeight="26.0" prefWidth="185.0" text="Profile" />
+      <Button layoutY="87.0" mnemonicParsing="false" onAction="#SwitchToVisitManagement" prefHeight="26.0" prefWidth="185.0" text="Visit" />
+      <Button layoutY="113.0" mnemonicParsing="false" onAction="#SwitchToVisitRecord" prefHeight="26.0" prefWidth="185.0" text="History" />
+      <Button layoutY="139.0" mnemonicParsing="false" onAction="#SwitchToOnGoingStatus" prefHeight="26.0" prefWidth="185.0" text="Status" />
+      <Button layoutY="165.0" mnemonicParsing="false" onAction="#SwitchToVisitorNotification" prefHeight="26.0" prefWidth="185.0" text="Notification" />
+      <Text layoutX="248.0" layoutY="118.0" strokeType="OUTSIDE" strokeWidth="0.0" text="VisitRecord" wrappingWidth="124.21630859375" />
    </children>
 </AnchorPane>
