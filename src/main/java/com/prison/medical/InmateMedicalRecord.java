@@ -26,9 +26,40 @@ public class InmateMedicalRecord {
 
     }
 
+    public void SwitchToMedicalInventoryRecord(ActionEvent event) throws IOException {
+
+        root = FXMLLoader.load(Objects.requireNonNull(getClass().getResource("MedicalInventoryRecord.fxml")));
+        stage = (Stage)((Node)event.getSource()).getScene().getWindow();
+        scene = new Scene(root);
+        stage.setScene(scene);
+        stage.show();
+
+    }
+
+
+    public void SwitchToMedicalItemRequest(ActionEvent event) throws IOException {
+
+        root = FXMLLoader.load(Objects.requireNonNull(getClass().getResource("MedicalItemRequest.fxml")));
+        stage = (Stage)((Node)event.getSource()).getScene().getWindow();
+        scene = new Scene(root);
+        stage.setScene(scene);
+        stage.show();
+
+    }
+
     public void SwitchToMedicalOfficerDashboard(ActionEvent event) throws IOException {
 
         root = FXMLLoader.load(Objects.requireNonNull(getClass().getResource("MedicalOfficerDashboard.fxml")));
+        stage = (Stage)((Node)event.getSource()).getScene().getWindow();
+        scene = new Scene(root);
+        stage.setScene(scene);
+        stage.show();
+
+    }
+
+    public void SwitchToMedicalOfficerNotification(ActionEvent event) throws IOException {
+
+        root = FXMLLoader.load(Objects.requireNonNull(getClass().getResource("MedicalOfficerNotification.fxml")));
         stage = (Stage)((Node)event.getSource()).getScene().getWindow();
         scene = new Scene(root);
         stage.setScene(scene);

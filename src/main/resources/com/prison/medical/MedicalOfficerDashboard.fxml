@@ -27,10 +27,10 @@
       <DatePicker layoutX="562.0" layoutY="22.0" prefHeight="21.0" prefWidth="168.0" />
       <Accordion layoutX="227.0" layoutY="138.0" />
       <Button layoutY="56.0" mnemonicParsing="false" onAction="#SwitchToMedicalOfficerDashboard" prefHeight="26.0" prefWidth="130.0" text="Dashboard" />
-      <Button layoutY="134.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="130.0" text="Request" />
-      <Button layoutY="108.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="130.0" text="Inventory" />
+      <Button layoutY="134.0" mnemonicParsing="false" onAction="#SwitchToMedicalItemRequest" prefHeight="26.0" prefWidth="130.0" text="Request" />
+      <Button layoutY="108.0" mnemonicParsing="false" onAction="#SwitchToMedicalInventoryRecord" prefHeight="26.0" prefWidth="130.0" text="Inventory" />
       <Button layoutY="82.0" mnemonicParsing="false" onAction="#SwitchToInmateMedicalRecord" prefHeight="26.0" prefWidth="130.0" text="Inmate" />
-      <Button layoutY="160.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="130.0" text="Notification" />
+      <Button layoutY="160.0" mnemonicParsing="false" onAction="#SwitchToMedicalOfficerNotification" prefHeight="26.0" prefWidth="130.0" text="Notification" />
       <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#ccd1d7" height="172.0" layoutX="150.0" layoutY="69.0" stroke="BLACK" strokeType="INSIDE" width="155.0" />
       <Text layoutX="202.0" layoutY="160.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Picture" wrappingWidth="50.13037109375" />
       <Text layoutX="150.0" layoutY="299.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Designation" />

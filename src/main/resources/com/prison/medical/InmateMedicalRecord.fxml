@@ -17,8 +17,9 @@
       <Line endX="-44.5" endY="426.79290771484375" layoutX="217.0" layoutY="106.0" startX="-44.5" startY="-43.5" />
       <Button layoutY="62.0" mnemonicParsing="false" onAction="#SwitchToMedicalOfficerDashboard" prefHeight="26.0" prefWidth="172.0" text="Dashboard" />
       <Button layoutY="88.0" mnemonicParsing="false" onAction="#SwitchToInmateMedicalRecord" prefHeight="26.0" prefWidth="172.0" text="Inmate" />
-      <Button layoutY="114.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="172.0" text="Inventory" />
-      <Button layoutY="140.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="172.0" text="Request" />
-      <Button layoutY="166.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="172.0" text="Notification" />
+      <Button layoutY="114.0" mnemonicParsing="false" onAction="#SwitchToMedicalInventoryRecord" prefHeight="26.0" prefWidth="172.0" text="Inventory" />
+      <Button layoutY="140.0" mnemonicParsing="false" onAction="#SwitchToMedicalItemRequest" prefHeight="26.0" prefWidth="172.0" text="Request" />
+      <Button layoutY="166.0" mnemonicParsing="false" onAction="#SwitchToMedicalOfficerNotification" prefHeight="26.0" prefWidth="172.0" text="Notification" />
+      <Text layoutX="290.0" layoutY="106.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Inmate" wrappingWidth="137.21630859375" />
    </children>
 </AnchorPane>
