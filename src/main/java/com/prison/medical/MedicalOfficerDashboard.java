@@ -18,7 +18,7 @@ public class MedicalOfficerDashboard {
 
     public void SwitchToInmateMedicalRecord(ActionEvent event) throws IOException {
 
-        root = FXMLLoader.load(Objects.requireNonNull(getClass().getResource("InmateMedicalRecord")));
+        root = FXMLLoader.load(Objects.requireNonNull(getClass().getResource("InmateMedicalRecord.fxml")));
         stage = (Stage)((Node)event.getSource()).getScene().getWindow();
         scene = new Scene(root);
         stage.setScene(scene);
@@ -28,7 +28,7 @@ public class MedicalOfficerDashboard {
 
     public void SwitchToMedicalOfficerDashboard(ActionEvent event) throws IOException {
 
-        root = FXMLLoader.load(Objects.requireNonNull(getClass().getResource("MedicalOfficerDashboard")));
+        root = FXMLLoader.load(Objects.requireNonNull(getClass().getResource("MedicalOfficerDashboard.fxml")));
         stage = (Stage)((Node)event.getSource()).getScene().getWindow();
         scene = new Scene(root);
         stage.setScene(scene);
