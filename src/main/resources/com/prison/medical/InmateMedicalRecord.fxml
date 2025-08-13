@@ -6,20 +6,19 @@
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-
-<AnchorPane prefHeight="501.0" prefWidth="774.0" xmlns="http://javafx.com/javafx/24.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.prison.medical.InmateMedicalRecord">
+<AnchorPane prefHeight="532.0" prefWidth="769.0" xmlns="http://javafx.com/javafx/24.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.prison.medical.MedicalInventoryRecord">
    <children>
-      <Text layoutX="20.0" layoutY="31.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Prison Management" wrappingWidth="197.21630859375">
+      <Text layoutX="24.0" layoutY="39.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Prison Management" wrappingWidth="157.21630859375">
          <font>
             <Font size="18.0" />
          </font>
       </Text>
-      <Line endX="656.0" layoutX="119.0" layoutY="58.0" startX="-119.0" />
-      <Line endX="-21.5" endY="353.29290771484375" layoutX="179.0" layoutY="149.0" startX="-21.5" startY="-90.5" />
-      <Button layoutY="59.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="157.0" text="Dashboard" />
-      <Button layoutY="85.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="157.0" text="Inmate" />
-      <Button layoutY="111.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="157.0" text="Inventory" />
-      <Button layoutY="137.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="157.0" text="Request" />
-      <Button layoutY="163.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="157.0" text="Notification" />
+      <Line endX="755.0000610351562" layoutX="14.0" layoutY="62.0" startX="-14.0" />
+      <Line endX="-44.5" endY="426.79290771484375" layoutX="217.0" layoutY="106.0" startX="-44.5" startY="-43.5" />
+      <Button layoutY="62.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="172.0" text="Dashboard" />
+      <Button layoutY="88.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="172.0" text="Inmate" />
+      <Button layoutY="114.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="172.0" text="Inventory" />
+      <Button layoutY="140.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="172.0" text="Request" />
+      <Button layoutY="166.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="172.0" text="Notification" />
    </children>
 </AnchorPane>
