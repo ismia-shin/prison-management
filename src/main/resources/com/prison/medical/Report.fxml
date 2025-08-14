@@ -26,6 +26,7 @@
             <TableColumn prefWidth="105.0" text="Diagnosis" />
         </columns>
       </TableView>
-      <Button layoutX="501.0" layoutY="389.0" mnemonicParsing="false" text="Prescribe" />
+      <Button layoutX="480.0" layoutY="388.0" mnemonicParsing="false" text="Add Precription" />
+      <Button layoutX="21.0" layoutY="388.0" mnemonicParsing="false" onAction="#SwitchToInmateMedicalRecord" text="&lt;Back" />
    </children>
 </AnchorPane>

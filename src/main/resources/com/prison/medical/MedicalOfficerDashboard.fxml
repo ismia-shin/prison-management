@@ -44,7 +44,7 @@
       <TableView layoutX="431.0" layoutY="63.0" prefHeight="341.0" prefWidth="375.0">
         <columns>
           <TableColumn prefWidth="183.0" text="Task List" />
-          <TableColumn minWidth="0.0" prefWidth="184.0" text="Priority List" />
+          <TableColumn minWidth="0.0" prefWidth="191.0" text="Priority List" />
         </columns>
       </TableView>
       <Text layoutX="263.0" layoutY="34.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Dashboard">

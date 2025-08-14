@@ -38,8 +38,8 @@
       <Label layoutX="332.0" layoutY="259.0" prefHeight="17.0" prefWidth="150.0" text="Label" />
       <Text layoutX="232.0" layoutY="306.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Allergy :" wrappingWidth="71.68603515625" />
       <Label layoutX="332.0" layoutY="293.0" prefHeight="17.0" prefWidth="150.0" text="Label" />
-      <Button layoutX="198.0" layoutY="351.0" mnemonicParsing="false" text="Report" />
-      <Button layoutX="283.0" layoutY="351.0" mnemonicParsing="false" text="Test" />
+      <Button layoutX="198.0" layoutY="351.0" mnemonicParsing="false" onAction="#SwitchToReport" text="Report" />
+      <Button layoutX="283.0" layoutY="351.0" mnemonicParsing="false" onAction="#SwitchToTestOrder" text="Test" />
       <Button layoutX="364.0" layoutY="351.0" mnemonicParsing="false" text="Prioritize" />
       <Button layoutX="547.0" layoutY="351.0" mnemonicParsing="false" text="Prescribe" />
       <Button layoutX="463.0" layoutY="351.0" mnemonicParsing="false" text="Call" />
