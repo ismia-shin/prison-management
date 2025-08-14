@@ -4,6 +4,7 @@ module com.prison.prisonmanagement {
 
     opens com.prison.medical to javafx.fxml;
     opens com.prison.visitor to javafx.fxml;
+    opens com.prison.common to javafx.fxml;
 
     opens com.prison to javafx.fxml;
     exports com.prison;
