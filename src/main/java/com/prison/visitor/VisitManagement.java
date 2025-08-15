@@ -1,16 +1,33 @@
 package com.prison.visitor;
 
 import javafx.event.ActionEvent;
+import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
+import javafx.fxml.Initializable;
 import javafx.scene.Node;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
+import javafx.scene.control.ComboBox;
+import javafx.scene.control.TextField;
 import javafx.stage.Stage;
 
 import java.io.IOException;
+import java.net.URL;
 import java.util.Objects;
+import java.util.ResourceBundle;
 
-public class VisitManagement {
+public class VisitManagement implements Initializable {
+
+    @FXML
+    public TextField VisitorName;
+    @FXML
+    public TextField VisitorNID;
+    @FXML
+    public TextField VisitorRelation;
+    @FXML
+    public ComboBox<String> VisitorActionChoice;
+
+
     private Stage stage;
     private Scene scene;
     private Parent root;
@@ -74,5 +91,11 @@ public class VisitManagement {
         stage.setScene(scene);
         stage.show();
 
+    }
+    private final String[] ActionChoice = {"Gift Request","Online Meetup","Offline Meetup"};
+
+    @Override
+    public void initialize(URL url, ResourceBundle resourceBundle) {
+        VisitorActionChoice.getItems().addAll(ActionChoice);
     }
 }

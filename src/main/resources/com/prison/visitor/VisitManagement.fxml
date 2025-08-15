@@ -30,12 +30,12 @@
       <Button layoutY="139.0" mnemonicParsing="false" onAction="#SwitchToOnGoingStatus" prefHeight="26.0" prefWidth="185.0" text="Status" />
       <Button layoutY="165.0" mnemonicParsing="false" onAction="#SwitchToVisitorNotification" prefHeight="26.0" prefWidth="185.0" text="Notification" />
       <Button layoutY="191.0" mnemonicParsing="false" onAction="#SwitchToVisitorDashboard" prefHeight="26.0" prefWidth="185.0" text="DashBoard" />
-      <ComboBox layoutX="277.0" layoutY="244.0" prefWidth="150.0" />
+      <ComboBox fx:id="VisitorActionChoice" layoutX="277.0" layoutY="244.0" prefWidth="150.0" />
       <ComboBox layoutX="277.0" layoutY="300.0" prefWidth="150.0" />
-      <TextField layoutX="278.0" layoutY="84.0" />
-      <TextField layoutX="278.0" layoutY="191.0" />
-      <TextField layoutX="278.0" layoutY="139.0" />
-      <Button layoutX="362.0" layoutY="402.0" mnemonicParsing="false" text="Apply" />
+      <TextField fx:id="VisitorName" layoutX="278.0" layoutY="84.0" />
+      <TextField fx:id="VisitorNID" layoutX="278.0" layoutY="191.0" />
+      <TextField fx:id="VisitorRelation" layoutX="278.0" layoutY="139.0" />
+      <Button layoutX="684.0" layoutY="394.0" mnemonicParsing="false" text="Apply" />
       <DatePicker layoutX="278.0" layoutY="361.0" />
       <Text layoutX="196.0" layoutY="101.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Visitor Name :" wrappingWidth="102.21630859375" />
       <Text layoutX="196.0" layoutY="157.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Relation : " wrappingWidth="81.21630859375" />
