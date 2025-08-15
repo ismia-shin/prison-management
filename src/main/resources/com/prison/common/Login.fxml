@@ -25,6 +25,6 @@
       <TextField fx:id="UserID" layoutX="245.0" layoutY="169.0" />
       <TextField fx:id="UserPassword" layoutX="245.0" layoutY="227.0" />
       <ComboBox fx:id="UserRoleChoice" layoutX="245.0" layoutY="286.0" prefHeight="26.0" prefWidth="160.0" />
-      <Button layoutX="273.0" layoutY="339.0" mnemonicParsing="false" text="Login" />
+      <Button fx:id="LoginButton" layoutX="273.0" layoutY="339.0" mnemonicParsing="false" onAction="#setLoginButton" text="Login" />
    </children>
 </AnchorPane>
