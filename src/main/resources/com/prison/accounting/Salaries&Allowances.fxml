@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.prison.accounting.SalariesAllowancesController">
+   <children>
+      <TableView fx:id="SalariesTV" layoutX="10.0" layoutY="189.0" prefHeight="210.0" prefWidth="274.0">
+        <columns>
+          <TableColumn fx:id="EmployeeIdTC" prefWidth="90.4000244140625" text="Employee Id" />
+          <TableColumn fx:id="PostTC" prefWidth="79.20001220703125" text="Post" />
+            <TableColumn fx:id="AmountTC" prefWidth="104.79998779296875" text="Amount" />
+        </columns>
+      </TableView>
+      <Label fx:id="DateL" layoutX="30.0" layoutY="94.0" text="Date :" />
+      <Button layoutX="403.0" layoutY="281.0" mnemonicParsing="false" onAction="#DownlodeBillOA" text="Downlode Bill" />
+      <Button layoutX="141.0" layoutY="142.0" mnemonicParsing="false" onAction="#SeeListOA" text="See List" />
+      <DatePicker fx:id="DateDP" layoutX="91.0" layoutY="90.0" />
+      <Label fx:id="SalariesAndAllowancesL" layoutX="169.0" layoutY="23.0" text="Salaries &amp; Allowances">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
