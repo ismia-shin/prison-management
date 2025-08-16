@@ -35,8 +35,8 @@
       <TextField fx:id="VisitorName" layoutX="278.0" layoutY="84.0" />
       <TextField fx:id="VisitorNID" layoutX="278.0" layoutY="191.0" />
       <TextField fx:id="VisitorRelation" layoutX="278.0" layoutY="139.0" />
-      <Button layoutX="684.0" layoutY="394.0" mnemonicParsing="false" text="Apply" />
-      <DatePicker layoutX="278.0" layoutY="361.0" />
+      <Button layoutX="684.0" layoutY="394.0" mnemonicParsing="false" onAction="#Apply" text="Apply" />
+      <DatePicker fx:id="VisitDate" layoutX="278.0" layoutY="361.0" />
       <Text layoutX="196.0" layoutY="101.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Visitor Name :" wrappingWidth="102.21630859375" />
       <Text layoutX="196.0" layoutY="157.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Relation : " wrappingWidth="81.21630859375" />
       <Text layoutX="196.0" layoutY="209.0" strokeType="OUTSIDE" strokeWidth="0.0" text="NID :" wrappingWidth="81.21630859375" />

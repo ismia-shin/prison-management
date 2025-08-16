@@ -12,6 +12,7 @@ import javafx.scene.Node;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.ComboBox;
+import javafx.scene.control.DatePicker;
 import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
 import javafx.stage.Stage;
@@ -38,6 +39,8 @@ public class VisitManagement implements Initializable {
     public Label PrisonerName;
     @FXML
     public Label PrisonerGender;
+    @FXML
+    public DatePicker VisitDate;
 
 
     private Stage stage;
@@ -137,6 +140,7 @@ public class VisitManagement implements Initializable {
     private final String[] ActionChoice = {"Gift Request","Online Meetup","Offline Meetup"};
 
     PrisonerList plist = new PrisonerList();
+    Record vlist = new Record();
 
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
@@ -165,6 +169,14 @@ public class VisitManagement implements Initializable {
 
         this.currentPrisoner = prisoner;
     }
+
+    public void Apply(ActionEvent event){
+
+        VisitRequest vr = new VisitRequest(VisitorName.getText(), VisitorRelation.getText(), VisitorNID.getText(), VisitorActionChoice.getValue(), currentPrisoner.getID(), VisitDate.getValue(), currentPrisoner.getName(), currentPrisoner.getGender());
+        vlist.getAllVistRequest().add(vr);
+
+    }
+
 
 
 }
