@@ -1,5 +1,11 @@
 package com.prison.accounting;
 
+import javafx.event.ActionEvent;
+import javafx.scene.control.DatePicker;
+import javafx.scene.control.Label;
+import javafx.scene.control.TableColumn;
+import javafx.scene.control.TableView;
+
 public class SalariesAllowancesController
 {
     @javafx.fxml.FXML
