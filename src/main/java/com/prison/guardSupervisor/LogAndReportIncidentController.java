@@ -1,5 +1,10 @@
 package com.prison.guardSupervisor;
 
+import javafx.event.ActionEvent;
+import javafx.scene.control.ComboBox;
+import javafx.scene.control.Label;
+import javafx.scene.control.TextArea;
+
 public class LogAndReportIncidentController
 {
     @javafx.fxml.FXML
@@ -10,6 +15,8 @@ public class LogAndReportIncidentController
     private TextArea detailsTA;
     @javafx.fxml.FXML
     private ComboBox CategoryCBOX;
+
+
 
     @javafx.fxml.FXML
     public void initialize() {

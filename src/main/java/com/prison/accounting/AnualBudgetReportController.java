@@ -1,5 +1,8 @@
 package com.prison.accounting;
 
+import javafx.event.ActionEvent;
+import javafx.scene.control.*;
+
 public class AnualBudgetReportController
 {
     @javafx.fxml.FXML

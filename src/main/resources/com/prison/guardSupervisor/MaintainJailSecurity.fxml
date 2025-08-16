@@ -1,19 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
 <?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-
 <AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.prison.guardSupervisor.MaintainJailSecurityController">
    <children>
-      <Button layoutX="125.0" layoutY="94.0" mnemonicParsing="false" onAction="#OpenSecurityDashboardOA" text="Open Security Dashboard" />
-      <Label fx:id="DoorCloseTimeL" layoutX="157.0" layoutY="191.0" text="Door Close Time" />
+      <Button layoutX="14.0" layoutY="288.0" mnemonicParsing="false" onAction="#OpenSecurityDashboardOA" text="Open Security Dashboard" />
+      <Label fx:id="DoorCloseTimeL" layoutX="28.0" layoutY="182.0" text="Door Close On Time :" />
       <Label fx:id="MaintainJailSecurityL" layoutX="245.0" layoutY="44.0" text="Maintain Jail Security">
          <font>
             <Font name="System Bold" size="24.0" />
          </font>
       </Label>
+      <Label fx:id="ShowCCTVL" layoutX="367.0" layoutY="200.0" prefHeight="114.0" prefWidth="152.0" text="             Show CCTV" />
+      <DatePicker fx:id="DoorCloseOnTimeDP" layoutX="147.0" layoutY="178.0" />
+      <Label fx:id="AllGuirdAreInPlaceL" layoutX="28.0" layoutY="126.0" text="All Guird Are In Place : " />
+      <RadioButton fx:id="YesRB" layoutX="174.0" layoutY="126.0" mnemonicParsing="false" text="Yes" />
+      <RadioButton fx:id="NoRB" layoutX="260.0" layoutY="126.0" mnemonicParsing="false" text="No" />
    </children>
 </AnchorPane>

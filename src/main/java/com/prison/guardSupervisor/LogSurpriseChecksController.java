@@ -1,5 +1,10 @@
 package com.prison.guardSupervisor;
 
+import javafx.event.ActionEvent;
+import javafx.scene.control.ComboBox;
+import javafx.scene.control.Label;
+import javafx.scene.control.TextArea;
+
 public class LogSurpriseChecksController
 {
     @javafx.fxml.FXML

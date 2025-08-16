@@ -4,21 +4,22 @@
 <?import javafx.scene.control.ComboBox?>
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-
 <AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.prison.guardSupervisor.CondictRandomCellSearchController">
    <children>
-      <Button layoutX="67.0" layoutY="87.0" mnemonicParsing="false" onAction="#CellSearchOA" text="Cell Search" />
-      <Label fx:id="OccupantsL" layoutX="112.0" layoutY="264.0" prefHeight="35.0" prefWidth="115.0" text="Occupants" />
-      <TextArea fx:id="ReasonTA" layoutX="323.0" layoutY="100.0" prefHeight="200.0" prefWidth="200.0" promptText="Reasons" />
-      <ComboBox fx:id="GuardSquadCBOX" layoutX="54.0" layoutY="200.0" prefWidth="150.0" promptText="Guard Squad" />
-      <Button layoutX="61.0" layoutY="132.0" mnemonicParsing="false" onAction="#ConfirmTaskOA" text="Confirm Task" />
+      <Button layoutX="84.0" layoutY="187.0" mnemonicParsing="false" onAction="#CellSearchOA" text="Cell Search" />
+      <TextArea fx:id="ReasonTA" layoutX="323.0" layoutY="100.0" prefHeight="200.0" prefWidth="200.0" promptText="                    Report" />
+      <ComboBox fx:id="GuardSquadCBOX" layoutX="46.0" layoutY="130.0" prefWidth="150.0" promptText="Guard Squad" />
+      <Button layoutX="182.0" layoutY="237.0" mnemonicParsing="false" onAction="#ConfirmTaskOA" text="Confirm Task" />
       <Label fx:id="CondictRandomCellL" layoutX="182.0" layoutY="36.0" text="Condict Random Cell">
          <font>
             <Font name="System Bold" size="24.0" />
          </font>
       </Label>
+      <Label fx:id="CellNoL" layoutX="46.0" layoutY="83.0" text="Cell No : " />
+      <TextField fx:id="CellNoTF" layoutX="95.0" layoutY="79.0" />
    </children>
 </AnchorPane>

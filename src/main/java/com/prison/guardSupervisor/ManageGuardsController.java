@@ -1,5 +1,8 @@
 package com.prison.guardSupervisor;
 
+import javafx.event.ActionEvent;
+import javafx.scene.control.*;
+
 public class ManageGuardsController
 {
     @javafx.fxml.FXML
@@ -25,4 +28,9 @@ public class ManageGuardsController
 
     @javafx.fxml.FXML
     public void initialize() {
-    }}
+    }
+
+    @javafx.fxml.FXML
+    public void ShowTableOA(ActionEvent actionEvent) {
+    }
+}

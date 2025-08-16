@@ -1,5 +1,9 @@
 package com.prison.accounting;
 
+import javafx.event.ActionEvent;
+import javafx.scene.control.DatePicker;
+import javafx.scene.control.Label;
+
 public class TaxAndCompliancesController
 {
     @javafx.fxml.FXML
