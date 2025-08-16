@@ -1,6 +1,6 @@
 package com.prison.guardSupervisor;
 
-public class GuardSupervisorDashboardController
+public class GuardSupervisorDashboard
 {
     @javafx.fxml.FXML
     public void initialize() {
