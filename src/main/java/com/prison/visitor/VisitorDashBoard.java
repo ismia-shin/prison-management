@@ -10,7 +10,7 @@ import javafx.stage.Stage;
 import java.io.IOException;
 import java.util.Objects;
 
-public class VisitRecord {
+public class VisitorDashBoard {
     private Stage stage;
     private Scene scene;
     private Parent root;
@@ -57,7 +57,8 @@ public class VisitRecord {
         VisitorProfile controller = loader.getController();
         controller.setVisitor(currentVisitor);
 
-        stage = (Stage)((Node)event.getSource()).getScene().getWindow();
+
+        stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
         scene = new Scene(root);
         stage.setScene(scene);
         stage.show();
@@ -94,7 +95,7 @@ public class VisitRecord {
 
     public void SwitchToVisitorDashboard(ActionEvent event) throws IOException {
 
-        FXMLLoader loader = new FXMLLoader(getClass().getResource("/com/prison/visitor/VisitorDashBoard.fxml"));
+        FXMLLoader loader = new FXMLLoader(getClass().getResource("/com/prison/visitor/VisitorDashboard.fxml"));
         root = loader.load();
         VisitorDashBoard controller = loader.getController();
         controller.setVisitor(currentVisitor);

@@ -1,16 +1,27 @@
 package com.prison.visitor;
 
 import javafx.event.ActionEvent;
+import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Node;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
+import javafx.scene.control.Label;
 import javafx.stage.Stage;
 
 import java.io.IOException;
-import java.util.Objects;
 
-public class VisitRecord {
+public class VisitorProfile {
+
+    @FXML
+    public Label VisitorName;
+    @FXML
+    public Label VisitorNID;
+    @FXML
+    public Label VisitorPhn;
+    @FXML
+    public Label VisitorBirthDate;
+
     private Stage stage;
     private Scene scene;
     private Parent root;
@@ -103,6 +114,15 @@ public class VisitRecord {
         scene = new Scene(root);
         stage.setScene(scene);
         stage.show();
+
+    }
+
+    public void Refresh(ActionEvent event) throws IOException {
+
+        VisitorName.setText(currentVisitor.getName());
+        VisitorNID.setText(currentVisitor.getNID());
+        VisitorPhn.setText(currentVisitor.getPhoneNumber());
+        VisitorBirthDate.setText(currentVisitor.getBirthDate());
 
     }
 }
