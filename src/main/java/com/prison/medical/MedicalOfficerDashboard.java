@@ -27,6 +27,7 @@ public class MedicalOfficerDashboard {
 
     public MedicalOfficer currentVisitor;
     public void setVisitor(MedicalOfficer medicalOfficer) {
+
         this.currentVisitor = medicalOfficer;
     }
 

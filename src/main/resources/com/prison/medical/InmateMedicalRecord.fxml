@@ -27,9 +27,9 @@
             <Font size="18.0" />
          </font></Text>
       <Text layoutX="232.0" layoutY="106.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Prisoner ID : " wrappingWidth="124.21630859375" />
-      <ComboBox layoutX="332.0" layoutY="88.0" prefWidth="150.0" />
+      <ComboBox fx:id="PrisonerID" layoutX="332.0" layoutY="88.0" prefWidth="150.0" />
       <Text layoutX="232.0" layoutY="153.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Prisoner Name :" wrappingWidth="100.21630859375" />
-      <Label layoutX="332.0" layoutY="140.0" prefHeight="17.0" prefWidth="150.0" text="Label" />
+      <Label fx:id="PrisonerName" layoutX="332.0" layoutY="140.0" prefHeight="17.0" prefWidth="150.0" text="Label" />
       <Text layoutX="232.0" layoutY="197.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Weight :" wrappingWidth="81.865234375" />
       <Label layoutX="332.0" layoutY="184.0" prefHeight="17.0" prefWidth="150.0" text="Label" />
       <Text layoutX="232.0" layoutY="233.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Blood Pressure :" wrappingWidth="100.21630859375" />
