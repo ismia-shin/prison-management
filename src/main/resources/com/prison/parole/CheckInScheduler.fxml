@@ -1,14 +1,37 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import java.lang.*?>
-<?import java.util.*?>
-<?import javafx.scene.*?>
-<?import javafx.scene.control.*?>
-<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
 
-<AnchorPane xmlns="http://javafx.com/javafx"
-            xmlns:fx="http://javafx.com/fxml"
-            fx:controller="com.prison.parole.CheckInSchedulerController"
-            prefHeight="400.0" prefWidth="600.0">
-
+<AnchorPane fx:id="button" prefHeight="648.0" prefWidth="902.0" xmlns="http://javafx.com/javafx/24.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.prison.parole.CheckInSchedulerController">
+   <children>
+      <TextField layoutX="114.0" layoutY="136.0" promptText="Prisoner/paroleeID" />
+      <Label layoutX="47.0" layoutY="140.0" text="Parolee ID:" />
+      <Label layoutX="346.0" layoutY="37.0" prefHeight="35.0" prefWidth="274.0" text="RescheduleCheckIn">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Label>
+      <TableView fx:id="reschedulebutton" accessibleRole="BUTTON" layoutX="25.0" layoutY="310.0" prefHeight="122.0" prefWidth="851.0">
+        <columns>
+          <TableColumn prefWidth="75.0" text="Parolee ID" />
+          <TableColumn prefWidth="106.4000244140625" text="Parole Reason" />
+            <TableColumn prefWidth="107.20001220703125" text="Parole Date from" />
+            <TableColumn prefWidth="112.0" text="Parole Date to" />
+            <TableColumn minWidth="0.0" prefWidth="155.99996948242188" text="Past Reschedule Record" />
+            <TableColumn minWidth="0.0" prefWidth="136.0" text="Reschedule Reason" />
+            <TableColumn minWidth="0.0" prefWidth="155.2000732421875" text="Reschedule Checkin date" />
+        </columns>
+      </TableView>
+      <Button fx:id="reschedule" layoutX="300.0" layoutY="546.0" mnemonicParsing="false" onAction="#reschedule" text="Reschedule" />
+      <Button layoutX="435.0" layoutY="546.0" mnemonicParsing="false" prefHeight="0.0" prefWidth="77.0" text="Submit" />
+      <Button layoutX="323.0" layoutY="196.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="160.0" text="View Prisoner Profile" />
+      <TextField layoutX="675.0" layoutY="464.0" promptText="if any" />
+      <Label layoutX="620.0" layoutY="468.0" text="Remarks:" />
+   </children>
 </AnchorPane>

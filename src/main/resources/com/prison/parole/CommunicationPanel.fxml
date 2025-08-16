@@ -1,14 +1,46 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import java.lang.*?>
-<?import java.util.*?>
-<?import javafx.scene.*?>
-<?import javafx.scene.control.*?>
-<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
 
-<AnchorPane xmlns="http://javafx.com/javafx"
-            xmlns:fx="http://javafx.com/fxml"
-            fx:controller="com.prison.parole.CommunicationPanelController"
-            prefHeight="400.0" prefWidth="600.0">
 
+<AnchorPane fx:id="button" prefHeight="576.0" prefWidth="808.0" xmlns="http://javafx.com/javafx/24.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.prison.parole.CommunicationPanelController">
+   <children>
+      <Label layoutX="276.0" layoutY="54.0" prefHeight="35.0" prefWidth="272.0" text="Communication Panel">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="37.0" layoutY="159.0" text="Meeting Schedule: " />
+      <TableView layoutX="27.0" layoutY="397.0" prefHeight="130.0" prefWidth="366.0">
+        <columns>
+          <TableColumn prefWidth="96.0" text="Message From" />
+          <TableColumn prefWidth="88.79998779296875" text="Message body" />
+            <TableColumn prefWidth="73.60003662109375" text="Date&amp;time" />
+            <TableColumn prefWidth="106.39999999999998" text="message Status" />
+        </columns>
+      </TableView>
+      <Button layoutX="548.0" layoutY="449.0" mnemonicParsing="false" text="Send Notification" />
+      <DatePicker layoutX="149.0" layoutY="155.0" promptText="date" />
+      <TextField layoutX="149.0" layoutY="259.0" promptText="NAME OF POST" />
+      <Label layoutX="38.0" layoutY="263.0" text="Authority Conduct:" />
+      <CheckBox layoutX="126.0" layoutY="199.0" mnemonicParsing="false" text="arrange and notify" />
+      <Button layoutX="513.0" layoutY="501.0" mnemonicParsing="false" text="Send" />
+      <Button layoutX="656.0" layoutY="501.0" mnemonicParsing="false" text="Cancel" />
+      <TableView layoutX="423.0" layoutY="245.0" prefHeight="86.0" prefWidth="347.0">
+        <columns>
+          <TableColumn prefWidth="120.79998779296875" text="AUTHORITY NAME" />
+          <TableColumn prefWidth="87.199951171875" text="CONTACT NO" />
+            <TableColumn prefWidth="138.399951171875" text="LAST CONTACT DATE" />
+        </columns>
+      </TableView>
+      <Button fx:id="message" layoutX="132.0" layoutY="341.0" mnemonicParsing="false" onAction="#message" text="Message" />
+   </children>
 </AnchorPane>

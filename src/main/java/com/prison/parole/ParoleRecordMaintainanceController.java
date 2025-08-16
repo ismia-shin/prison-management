@@ -1,6 +1,6 @@
 package com.prison.parole;
 
-public class ParoleRecordMaintananceController
+public class ParoleRecordMaintainanceController
 {
     @javafx.fxml.FXML
     public void initialize() {

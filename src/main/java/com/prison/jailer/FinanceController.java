@@ -1,6 +1,6 @@
-package com.prison.parole;
+package com.prison.jailer;
 
-public class KkkController
+public class FinanceController
 {
     @javafx.fxml.FXML
     public void initialize() {
