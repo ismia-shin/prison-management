@@ -38,9 +38,10 @@
       <Text layoutX="231.0" layoutY="396.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Birth Date :" />
       <Text layoutX="232.0" layoutY="356.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Phone Number :" />
       <Button layoutY="190.0" mnemonicParsing="false" onAction="#SwitchToVisitorDashboard" prefHeight="26.0" prefWidth="202.0" text="Dashboard" />
-      <Label layoutX="336.0" layoutY="263.0" text="Label" />
-      <Label layoutX="335.0" layoutY="303.0" text="Label" />
-      <Label layoutX="335.0" layoutY="343.0" text="Label" />
-      <Label layoutX="336.0" layoutY="383.0" text="Label" />
+      <Label fx:id="VisitorName" layoutX="336.0" layoutY="263.0" text="Label" />
+      <Label fx:id="VisitorNID" layoutX="335.0" layoutY="303.0" text="Label" />
+      <Label fx:id="VisitorPhn" layoutX="335.0" layoutY="343.0" text="Label" />
+      <Label fx:id="VisitorBirthDate" layoutX="336.0" layoutY="383.0" text="Label" />
+      <Button layoutX="681.0" layoutY="379.0" mnemonicParsing="false" onAction="#Refresh" text="Refresh" />
    </children>
 </AnchorPane>

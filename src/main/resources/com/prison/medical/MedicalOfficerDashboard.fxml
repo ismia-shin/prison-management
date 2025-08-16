@@ -37,10 +37,10 @@
       <Text layoutX="150.0" layoutY="375.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Lisence Number :" />
       <Text layoutX="150.0" layoutY="337.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Specialization :" />
       <Text layoutX="150.0" layoutY="264.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Name :" />
-      <TextField layoutX="252.0" layoutY="247.0" prefHeight="17.0" prefWidth="160.0" />
-      <TextField layoutX="252.0" layoutY="281.0" />
-      <TextField layoutX="252.0" layoutY="320.0" />
-      <TextField layoutX="252.0" layoutY="357.0" />
+      <TextField fx:id="MedicalOfficerName" layoutX="252.0" layoutY="247.0" prefHeight="17.0" prefWidth="160.0" />
+      <TextField fx:id="MedicalOfficerDes" layoutX="252.0" layoutY="281.0" />
+      <TextField fx:id="MedicalOfficerSpeci" layoutX="252.0" layoutY="320.0" />
+      <TextField fx:id="MedicalOfficerLisenceNum" layoutX="252.0" layoutY="357.0" />
       <TableView layoutX="431.0" layoutY="63.0" prefHeight="341.0" prefWidth="375.0">
         <columns>
           <TableColumn prefWidth="183.0" text="Task List" />
@@ -52,5 +52,6 @@
             <Font size="18.0" />
          </font>
       </Text>
+      <Button layoutX="736.0" layoutY="417.0" mnemonicParsing="false" onAction="#Refresh" text="Refresh" />
    </children>
 </AnchorPane>

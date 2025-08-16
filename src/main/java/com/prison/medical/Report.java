@@ -16,9 +16,19 @@ public class Report {
     private Scene scene;
     private Parent root;
 
+    public MedicalOfficer currentVisitor;
+
+    public void setVisitor(MedicalOfficer medicalOfficer) {
+        this.currentVisitor = medicalOfficer;
+    }
+
     public void SwitchToInmateMedicalRecord(ActionEvent event) throws IOException {
 
-        root = FXMLLoader.load(Objects.requireNonNull(getClass().getResource("InmateMedicalRecord.fxml")));
+        FXMLLoader loader = new FXMLLoader(getClass().getResource("/com/prison/medical/InmateMedicalRecord.fxml"));
+        root = loader.load();
+        InmateMedicalRecord controller = loader.getController();
+        controller.setVisitor(currentVisitor);
+
         stage = (Stage)((Node)event.getSource()).getScene().getWindow();
         scene = new Scene(root);
         stage.setScene(scene);

@@ -15,9 +15,19 @@ public class OnGoingStatus {
     private Scene scene;
     private Parent root;
 
+    public Visitor currentVisitor;
+
+    public void setVisitor(Visitor visitor) {
+        this.currentVisitor = visitor;
+    }
+
     public void SwitchToOnGoingStatus(ActionEvent event) throws IOException {
 
-        root = FXMLLoader.load(Objects.requireNonNull(getClass().getResource("OnGoingStatus.fxml")));
+        FXMLLoader loader = new FXMLLoader(getClass().getResource("/com/prison/visitor/OnGoingStatus.fxml"));
+        root = loader.load();
+        OnGoingStatus controller = loader.getController();
+        controller.setVisitor(currentVisitor);
+
         stage = (Stage)((Node)event.getSource()).getScene().getWindow();
         scene = new Scene(root);
         stage.setScene(scene);
@@ -27,7 +37,11 @@ public class OnGoingStatus {
 
     public void SwitchToVisitManagement(ActionEvent event) throws IOException {
 
-        root = FXMLLoader.load(Objects.requireNonNull(getClass().getResource("VisitManagement.fxml")));
+        FXMLLoader loader = new FXMLLoader(getClass().getResource("/com/prison/visitor/VisitManagement.fxml"));
+        root = loader.load();
+        VisitManagement controller = loader.getController();
+        controller.setVisitor(currentVisitor);
+
         stage = (Stage)((Node)event.getSource()).getScene().getWindow();
         scene = new Scene(root);
         stage.setScene(scene);
@@ -38,7 +52,11 @@ public class OnGoingStatus {
 
     public void SwitchToVisitorProfile(ActionEvent event) throws IOException {
 
-        root = FXMLLoader.load(Objects.requireNonNull(getClass().getResource("VisitorProfile.fxml")));
+        FXMLLoader loader = new FXMLLoader(getClass().getResource("/com/prison/visitor/VisitorProfile.fxml"));
+        root = loader.load();
+        VisitorProfile controller = loader.getController();
+        controller.setVisitor(currentVisitor);
+
         stage = (Stage)((Node)event.getSource()).getScene().getWindow();
         scene = new Scene(root);
         stage.setScene(scene);
@@ -48,7 +66,11 @@ public class OnGoingStatus {
 
     public void SwitchToVisitorNotification(ActionEvent event) throws IOException {
 
-        root = FXMLLoader.load(Objects.requireNonNull(getClass().getResource("VisitorNotification.fxml")));
+        FXMLLoader loader = new FXMLLoader(getClass().getResource("/com/prison/visitor/VisitorNotification.fxml"));
+        root = loader.load();
+        VisitorNotification controller = loader.getController();
+        controller.setVisitor(currentVisitor);
+
         stage = (Stage)((Node)event.getSource()).getScene().getWindow();
         scene = new Scene(root);
         stage.setScene(scene);
@@ -58,7 +80,11 @@ public class OnGoingStatus {
 
     public void SwitchToVisitRecord(ActionEvent event) throws IOException {
 
-        root = FXMLLoader.load(Objects.requireNonNull(getClass().getResource("VisitRecord.fxml")));
+        FXMLLoader loader = new FXMLLoader(getClass().getResource("/com/prison/visitor/VisitRecord.fxml"));
+        root = loader.load();
+        VisitRecord controller = loader.getController();
+        controller.setVisitor(currentVisitor);
+
         stage = (Stage)((Node)event.getSource()).getScene().getWindow();
         scene = new Scene(root);
         stage.setScene(scene);
@@ -68,7 +94,11 @@ public class OnGoingStatus {
 
     public void SwitchToVisitorDashboard(ActionEvent event) throws IOException {
 
-        root = FXMLLoader.load(Objects.requireNonNull(getClass().getResource("VisitorDashboard.fxml")));
+        FXMLLoader loader = new FXMLLoader(getClass().getResource("/com/prison/visitor/VisitorDashBoard.fxml"));
+        root = loader.load();
+        VisitorDashBoard controller = loader.getController();
+        controller.setVisitor(currentVisitor);
+
         stage = (Stage)((Node)event.getSource()).getScene().getWindow();
         scene = new Scene(root);
         stage.setScene(scene);
